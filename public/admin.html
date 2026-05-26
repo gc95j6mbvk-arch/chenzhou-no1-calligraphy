@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>书法社后台管理</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="admin-body">
+    <header class="site-header admin-top">
+      <a class="brand" href="/">
+        <span class="seal">书</span>
+        <span>
+          <strong>书法社后台</strong>
+          <small>Content Admin</small>
+        </span>
+      </a>
+      <nav class="nav admin-tabs" aria-label="后台导航">
+        <button data-tab="content" class="active">内容</button>
+        <button data-tab="submissions">报名</button>
+        <button data-tab="uploads">投稿</button>
+      </nav>
+      <a class="admin-link" href="/">前台</a>
+    </header>
+
+    <main class="admin-shell">
+      <section id="loginView" class="login-panel">
+        <h1>后台登录</h1>
+        <form id="loginForm" class="panel-form">
+          <label class="wide">管理员密码<input name="password" type="password" required autofocus /></label>
+          <button class="primary-btn wide" type="submit">登录</button>
+          <p id="loginMessage" class="form-message"></p>
+        </form>
+      </section>
+
+      <section id="adminView" class="admin-view" hidden>
+        <div id="contentTab" class="tab-panel">
+          <div class="admin-heading">
+            <div>
+              <p class="section-kicker">内容管理</p>
+              <h1>官网内容</h1>
+            </div>
+            <button id="saveContent" class="primary-btn">保存内容</button>
+          </div>
+
+          <section class="admin-section">
+            <h2>基础信息</h2>
+            <div class="editor-grid">
+              <label>社团全称<input data-club="name" /></label>
+              <label>简称<input data-club="shortName" /></label>
+              <label>成立时间<input data-club="established" /></label>
+              <label>指导老师<input data-club="teacher" /></label>
+              <label>社长/干部<input data-club="president" /></label>
+              <label>邮箱<input data-club="email" /></label>
+              <label class="wide">活动地点<input data-club="location" /></label>
+              <label class="wide">社团口号<input data-club="slogan" /></label>
+              <label class="wide">社团简介<textarea data-club="intro" rows="5"></textarea></label>
+              <label>QQ群文字<input data-contact="qqText" /></label>
+              <label>QQ群二维码图片地址<input data-contact="qqImage" /></label>
+              <label class="wide">上传QQ群二维码<input id="qqImageFile" type="file" accept="image/png,image/jpeg,image/webp" /></label>
+              <label class="wide">招新说明<textarea data-contact="joinNote" rows="3"></textarea></label>
+            </div>
+          </section>
+
+          <section class="admin-section">
+            <div class="list-title"><h2>公告</h2><button data-add="announcements">新增公告</button></div>
+            <div id="announcementEditor" class="editor-list"></div>
+          </section>
+
+          <section class="admin-section">
+            <div class="list-title"><h2>活动记录</h2><button data-add="activities">新增活动</button></div>
+            <div id="activityEditor" class="editor-list"></div>
+          </section>
+
+          <section class="admin-section">
+            <div class="list-title"><h2>成员风采</h2><button data-add="members">新增成员</button></div>
+            <div id="memberEditor" class="editor-list"></div>
+          </section>
+
+          <section class="admin-section">
+            <div class="list-title"><h2>作品展</h2><button data-add="artworks">新增作品</button></div>
+            <div id="artworkEditor" class="editor-list"></div>
+          </section>
+          <p id="contentMessage" class="form-message"></p>
+        </div>
+
+        <div id="submissionsTab" class="tab-panel" hidden>
+          <div class="admin-heading">
+            <div>
+              <p class="section-kicker">招新报名</p>
+              <h1>报名记录</h1>
+            </div>
+            <button id="refreshSubmissions" class="ghost-btn">刷新</button>
+          </div>
+          <div id="submissionList" class="admin-records"></div>
+        </div>
+
+        <div id="uploadsTab" class="tab-panel" hidden>
+          <div class="admin-heading">
+            <div>
+              <p class="section-kicker">作品投稿</p>
+              <h1>投稿审核</h1>
+            </div>
+            <button id="refreshUploads" class="ghost-btn">刷新</button>
+          </div>
+          <div id="uploadList" class="admin-records"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/admin.js"></script>
+  </body>
+</html>

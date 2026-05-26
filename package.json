@@ -1,0 +1,18 @@
+{
+  "name": "chenzhou-no1-calligraphy",
+  "version": "1.0.0",
+  "description": "Website for Chenzhou No.1 High School Calligraphy Club",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "calligraphy",
+    "school-club",
+    "chenzhou"
+  ],
+  "license": "MIT"
+}
