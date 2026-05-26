@@ -1,0 +1,101 @@
+{
+  "club": {
+    "name": "湖南省郴州市第一中学书法社",
+    "shortName": "郴州一中书法社",
+    "established": "待补充",
+    "slogan": "笔墨承古意，青春写新章",
+    "intro": "这里是热爱书法的同学们共同练笔、观摩、交流与展示的校园空间。社团以楷、行、隶、篆等传统书体学习为基础，结合校园活动、作品展览与公益书写实践，让笔墨成为同学们认识传统文化、表达自我审美的一种方式。",
+    "teacher": "指导老师待补充",
+    "president": "社长/干部信息待补充",
+    "qq": "QQ群二维码待上传",
+    "email": "calligraphy@example.com",
+    "location": "湖南省郴州市第一中学校园内"
+  },
+  "announcements": [
+    {
+      "id": "notice-1",
+      "title": "2026 年春季招新报名开启",
+      "date": "2026-05-26",
+      "summary": "欢迎热爱书法、传统文化和校园美育活动的同学加入书法社。",
+      "content": "报名同学可在官网填写招新表单，后续将由社团干部统一联系。"
+    },
+    {
+      "id": "notice-2",
+      "title": "书法作品线上展征稿",
+      "date": "2026-05-20",
+      "summary": "社团作品展栏目接受楷书、行书、隶书、篆书等作品投稿。",
+      "content": "上传作品图片后将进入后台审核，通过后展示在官网作品展中。"
+    }
+  ],
+  "activities": [
+    {
+      "id": "activity-1",
+      "title": "社团日常临帖练习",
+      "date": "每周社团活动时间",
+      "place": "书法教室",
+      "summary": "围绕经典碑帖进行临摹、点评与交流，帮助成员建立稳定的笔法和章法意识。",
+      "image": "/assets/activity-practice.png"
+    },
+    {
+      "id": "activity-2",
+      "title": "校园书法作品展",
+      "date": "学期阶段性展示",
+      "place": "校园展区",
+      "summary": "集中展示成员阶段性作品，让书法从练习纸走向校园公共空间。",
+      "image": "/assets/activity-exhibit.png"
+    }
+  ],
+  "members": [
+    {
+      "id": "member-1",
+      "name": "社长信息待补充",
+      "role": "社长",
+      "bio": "负责社团活动统筹、招新联络与作品展组织。"
+    },
+    {
+      "id": "member-2",
+      "name": "宣传负责人待补充",
+      "role": "宣传",
+      "bio": "负责官网内容维护、公告发布与作品收集。"
+    },
+    {
+      "id": "member-3",
+      "name": "活动负责人待补充",
+      "role": "活动",
+      "bio": "负责社团活动记录、现场秩序与成员交流。"
+    }
+  ],
+  "artworks": [
+    {
+      "id": "art-1",
+      "title": "楷书临帖",
+      "author": "成员作品示例",
+      "grade": "高一",
+      "style": "楷书",
+      "image": "/assets/work-kaishu.png",
+      "description": "以端正结构和清晰笔画为训练重点。"
+    },
+    {
+      "id": "art-2",
+      "title": "行书习作",
+      "author": "成员作品示例",
+      "grade": "高二",
+      "style": "行书",
+      "image": "/assets/work-xingshu.png",
+      "description": "在连贯书写中体会节奏和气息。"
+    },
+    {
+      "id": "art-3",
+      "title": "隶书横幅",
+      "author": "成员作品示例",
+      "grade": "高三",
+      "style": "隶书",
+      "image": "/assets/work-lishu.png",
+      "description": "以蚕头燕尾和横向开张的字势为特色。"
+    }
+  ],
+  "contacts": {
+    "qqText": "请在后台上传QQ群二维码或填写QQ群号",
+    "joinNote": "填写报名表后，社团干部会在近期联系你确认面试或体验课安排。"
+  }
+}
